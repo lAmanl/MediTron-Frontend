@@ -1,7 +1,7 @@
 import logo from "../../assets/img/landingPage/logo1.svg";
 import add_doctor from "../../assets/img/dashboard/add_doctor.png";
-import patient_list from "../../assets/img/dashboard/patient_list.png";
-import doctor_list from "../../assets/img/dashboard/doctor_list.png";
+import patient_list from "../../assets/img/dashboard/reports.jpeg";
+import doctor_list from "../../assets/img/dashboard/reports.jpeg";
 import logoutimg from "../../assets/img/dashboard/logout.png";
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import { useState } from "react";
@@ -23,7 +23,7 @@ const AdminSidebar = (props) => {
 
   return (
     <div className="h-screen overflow-y-hidden w-screen grid grid-cols-12">
-      <div className="side_bar bg-white shadow col-span-2">
+      <div className="side_bar text-light shadow col-span-2" style={{ backgroundColor: '#17202A' }}>
         <div className="flex m-2 mt-4  ">
           <div className="logo m-2  ">
             <img src={logo} className="w-16" alt="logo"></img>
@@ -50,7 +50,7 @@ const AdminSidebar = (props) => {
                     <img src={dashboard} alt="dashboard"></img>
                   </div>
                   <div className="font-poppins font-bold ml-4">
-                    <h1>Dashboard</h1>
+                    <h1 className="text-light">Dashboard</h1>
                   </div>
                 </div>
               </Link>
@@ -68,7 +68,7 @@ const AdminSidebar = (props) => {
                     <img src={patient_list} alt="patient-list"></img>
                   </div>
                   <div className="font-poppins font-bold ml-4">
-                    <h1>Patient List</h1>
+                    <h1 className="text-light">Patient List</h1>
                   </div>
                 </div>
               </Link>
@@ -86,7 +86,7 @@ const AdminSidebar = (props) => {
                     <img src={doctor_list} alt="doctor-list"></img>
                   </div>
                   <div className="font-poppins font-bold ml-4">
-                    <h1>Doctor List</h1>
+                    <h1 className="text-light">Doctor List</h1>
                   </div>
                 </div>
               </Link>
@@ -100,7 +100,7 @@ const AdminSidebar = (props) => {
                     <img src={add_doctor} alt="add-doctor"></img>
                   </div>
                   <div className="font-poppins font-bold ml-4">
-                    <h1>Add a Doctor</h1>
+                    <h1 className="text-light">Add a Doctor</h1>
                   </div>
                 </div>
               </Link>
@@ -110,8 +110,7 @@ const AdminSidebar = (props) => {
 
         <div className=" mx-auto mt-56 py-1    bg-primary  rounded font-semibold font-poppins shadow-sm hover:bg-bgsecondary w-2/5  ">
           <button className="font-bold  flex items-center" onClick={logout}>
-            <img src={logoutimg} className="h-4 px-2 " alt="logout"></img>
-            logout
+            <p className="ms-4">logout</p>
           </button>
         </div>
       </div>

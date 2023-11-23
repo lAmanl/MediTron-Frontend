@@ -1,6 +1,6 @@
 import logo from "../../assets/img/landingPage/logo1.svg";
 import dashboard from "../../assets/img/dashboard/dashboard.jpeg";
-import reports from "../../assets/img/dashboard/report2_pbl.png";
+import reports from "../../assets/img/dashboard/reports.jpeg";
 import patient_history from "../../assets/img/dashboard/patient_history.jpeg";
 import patient_profile from "../../assets/img/dashboard/patient2_pbl.png";
 import logoutimg from "../../assets/img/dashboard/logout.png";
@@ -20,8 +20,8 @@ const DashboardSidebar = (props) => {
 
   const [Toggle, setToggle] = useState("Dashboard");
   return (
-    <div className="h-screen overflow-y-scroll w-screen grid grid-cols-12">
-      <div className="side_bar bg-white shadow col-span-2">
+    <div className="h-screen overflow-y-scroll w-screen grid grid-cols-12" >
+      <div className="side_bar text-light shadow col-span-2" style={{ backgroundColor: '#17202A' }}>
         <div className="flex m-2 mt-4  ">
           <div className="logo m-2  ">
             <img src={logo} className="w-16" alt="logo"></img>
@@ -48,7 +48,7 @@ const DashboardSidebar = (props) => {
                     <img src={dashboard} alt="dashbord"></img>
                   </div>
                   <div className="font-poppins font-bold ml-4">
-                    <h1>Dashboard</h1>
+                    <h1 className="text-light">Dashboard</h1>
                   </div>
                 </div>
               </Link>
@@ -62,7 +62,7 @@ const DashboardSidebar = (props) => {
                     <img src={reports} alt="report"></img>
                   </div>
                   <div className="font-poppins font-bold ml-4">
-                    <h1>Reports</h1>
+                    <h1 className="text-light">Reports</h1>
                   </div>
                 </div>
               </Link>
@@ -81,7 +81,7 @@ const DashboardSidebar = (props) => {
                     className="w-6"
                     alt="pat-history"
                   ></img>
-                  <h1 className="ml-4">Patient History</h1>
+                  <h1 className="ml-4 text-light">Patient History</h1>
                 </div>
               </Link>
             </div>
@@ -90,7 +90,7 @@ const DashboardSidebar = (props) => {
 
         <div className=" mx-auto mt-56 py-1    bg-primary  rounded font-semibold font-poppins shadow-sm hover:bg-bgsecondary w-2/5  ">
           <button className="font-bold  flex items-center" onClick={logout}>
-            <img src={logoutimg} className="h-4 px-2 " alt="logout"></img>logout
+            <p className="ms-4">logout</p>
           </button>
         </div>
       </div>

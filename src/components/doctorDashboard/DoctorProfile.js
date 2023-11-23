@@ -12,6 +12,7 @@ import degree from "../../assets/img/dashboard/doctor-profile-degree.png";
 import home from "../../assets/img/dashboard/doctor-profile-home.png";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Footer from "../landingPage/Footer";
 
 const DoctorProfile = (props) => {
   const navigate = useNavigate();
@@ -174,6 +175,7 @@ const DoctorProfile = (props) => {
           </div>
         </div>
       </div>
+      <Footer />
     </body>
   );
 };

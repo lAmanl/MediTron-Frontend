@@ -161,17 +161,9 @@ export default function Register(props) {
               }
             >
               <h1 className="font-bold flex justify-center mt-6">
-                For register as doctor contact to admin with you all information
+                Doctor must contact to the admin for registration.
               </h1>
-              <div className="border-4 p-4 mx-auto w-1/2 rounded-xl mt-8  ">
-                <h1>send your all information</h1>
-                <div>
-                  <div className=" rounded-xl p-4 mt-4 ">
-                    <h1 className="font-bold">Email :</h1>
-                    <p>admin@gmail.com</p>
-                  </div>
-                </div>
-              </div>
+              
             </div>
 
             <div className={Toggle === "Patient" ? "" : "hidden"}>
